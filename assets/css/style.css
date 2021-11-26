@@ -1,10 +1,3 @@
-/**
-* Template Name: iPortfolio - v3.7.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -208,7 +201,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero:before {
   content: "";
   background: rgba(5, 13, 24, 0.3);
-  position: absolute;
+  position: fixed;
   bottom: 0;
   top: 0;
   left: 0;
@@ -243,8 +236,14 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     background-attachment: fixed;
   }
+  .loader {
+    position: fixed;
+    width: 100%;
+  }
 }
+
 @media (max-width: 768px) {
+
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -254,6 +253,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
+
 }
 
 /*--------------------------------------------------------------
@@ -905,11 +905,10 @@ section {
 }
 
 .loader {
-  position: absolute;
-  width: 91%;
+  position: fixed;
+  width: 100%;
   height: 100vh;
-  margin-left: 150px;
   z-index: 1000;
+  overflow: visible;
   background: white url(/assets/img/gif/Leonardo.gif) no-repeat center center;
 }
-
