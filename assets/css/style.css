@@ -910,6 +910,6 @@ section {
   height: 100vh;
   margin-left: 150px;
   z-index: 1000;
-  background: white url(/assets/img/gif/Leonardo.gif) no-repeat center center
+  background: white url(/assets/img/gif/Leonardo.gif) no-repeat center center;
 }
 
