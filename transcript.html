@@ -68,6 +68,24 @@
     </div>
   </header><!-- End Header -->
 
+  <style type="text/css">
+    label{
+      width:200px;
+      display: inline-block;
+      margin: 10px;
+
+    }
+
+    input {
+      width:500px;
+      border: 2px solid black;
+    }
+
+    .button-area{
+      margin-left: 20%;
+    }
+  </style>
+
   <main id="main">
 
     <!-- ======= form section ======= -->
@@ -77,7 +95,41 @@
           <div class="section-title">
             <h2>Transcript Info.</h2>
 
-            <p> Your form goes here. </p>
+            <form>         
+              <label>
+                Student ID</label> 
+                <input type="number" name="StudentID" required>
+              <br>                                     
+              <label>
+                Course ID</label> 
+                <input type="text" name="CourseID" required>
+              <br>
+                <label>
+                Assignment NO.</label> 
+                <input type="text" name="Grade" required>
+              <br>
+              <label>
+                Date Completed</label>
+                <input type="date" name="DateCompleted" required>
+              <br>
+                <label>
+                Credit Hours Earned</label> 
+                <input type="number" name="CreditHoursEarned" required>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+
+              <div class="button-area">
+                <button type="submit">Go To</button>
+                <input type="text" name="Search">
+                <button type="submit">Add</button>
+                <button type="submit">Clear</button>
+                <button type="submit">Save and Next</button>
+            </div>
+              
+            </form>
 
           </div>
       </div>
